@@ -1,0 +1,36 @@
+{
+  "name": "Regex Parser Bot",
+  "description": "A Telegram bot to parse messages using regex, manage users and groups, and broadcast messages.",
+  "repository": "https://github.com/PN-Projects/regex_parser_bot",
+  "logo": "https://raw.githubusercontent.com/PN-Projects/regex_parser_bot/main/assets/logo.png",
+  "keywords": ["telegram", "bot", "regex", "python", "telethon"],
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID. Get it from https://my.telegram.org.",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash. Get it from https://my.telegram.org.",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token. Get it from @BotFather.",
+      "required": true
+    },
+    "DATABASE_URI": {
+      "description": "Your PostgreSQL database URI. Example: postgresql://user:password@localhost:5432/telegram_bot",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
