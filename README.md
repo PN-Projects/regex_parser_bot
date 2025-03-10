@@ -99,26 +99,30 @@ Or Just Click the button below to deploy this bot to Heroku instantly:
 
 
 
-<h2>🤝 Contributing: Join the Party!</h2>
-<p>We’re all about collaboration! Here’s how you can contribute:</p>
-<ol>
-  <li>Fork the repository. 🍴</li>
-  <li>Create a new branch:
-    <pre><code>git checkout -b feature/your-feature-name</code></pre>
-  </li>
-  <li>Commit your changes:
-    <pre><code>git commit -m "Add your feature"</code></pre>
-  </li>
-  <li>Push to the branch:
-    <pre><code>git push origin feature/your-feature-name</code></pre>
-  </li>
-  <li>Open a pull request. We’ll review it faster than you can say “regex”! 🚀</li>
-</ol>
-
 <h2>🌟 Contributors: The Real Heroes</h2>
-<p>Thanks to these amazing people who have contributed to this project:</p>
-<!-- ALL-CONTRIBUTORS-LIST:START -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+Thanks to these jacka** i mean amazing people who have contributed to this project:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/satyanandatripathi">
+        <img src="https://avatars.githubusercontent.com/u/satyanandatripathi" width="100px;" alt="satyanandatripathi"/>
+        <br />
+        <sub><b>satyanandatripathi</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/AvikaTrivedi">
+        <img src="https://avatars.githubusercontent.com/u/AvikaTrivedi" width="100px;" alt="AvikaTrivedi"/>
+        <br />
+        <sub><b>AvikaTrivedi</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
 
 <h2>📄 License: Do What You Want (Within Reason)</h2>
 <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details. Basically, do whatever you want, but don’t blame us if it breaks. 😉</p>
