@@ -90,8 +90,12 @@ DATABASE_URI=postgresql://user:password@localhost:5432/telegram_bot</code></pre>
     <pre><code>heroku ps:scale worker=1</code></pre>
   </li>
 </ol>
-or you can just:
-[![[Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PN-Projects/regex_parser_bot)]
+
+Or Just Click the button below to deploy this bot to Heroku instantly:
+
+<a href="https://heroku.com/deploy?template=https://github.com/PN-Projects/regex_parser_bot">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku">
+</a>
 
 
 
