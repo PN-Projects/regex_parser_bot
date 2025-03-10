@@ -91,29 +91,9 @@ DATABASE_URI=postgresql://user:password@localhost:5432/telegram_bot</code></pre>
   </li>
 </ol>
 or you can just:
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PN-Projects/regex_parser_bot)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PN-Projects/regex_parser_bot)]
 
-<h2>📂 Project Structure: Where the Magic Happens</h2>
-<pre>
-telegram_bot/
-│
-├── config.py
-├── client.py
-├── database.py
-├── commands/
-│   ├── __init__.py
-│   ├── start.py
-│   ├── help.py
-│   ├── regex.py
-│   ├── broadcast.py
-│   ├── stats.py
-├── bot.py
-├── requirements.txt
-├── Dockerfile
-├── Procfile
-├── runtime.txt
-└── .env
-</pre>
+
 
 <h2>🤝 Contributing: Join the Party!</h2>
 <p>We’re all about collaboration! Here’s how you can contribute:</p>
