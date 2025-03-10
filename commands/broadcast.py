@@ -1,39 +1,46 @@
-# commands/broadcast.py
 from telethon import events
 from client import client
-from database import get_users, get_groups
+from config import GOD_USER_ID, PRIVILEGED_USER_IDS
+import os
 
-@client.on(events.NewMessage(pattern='/broadcast'))
-async def handle_broadcast(event):
-    args = event.text.split()
-    if len(args) < 2:
-        await event.reply("Usage: /broadcast [-u|-g|-all] [message]")
+@client.on(events.NewMessage(pattern='/addprivileged'))
+async def handle_add_privileged(event):
+    if event.sender_id != GOD_USER_ID:
+        await event.reply("🚫 You do not have permission to use this command.")
         return
 
-    flag = args[1]
-    if flag not in ['-u', '-g', '-all']:
-        await event.reply("Invalid flag. Use -u, -g, or -all.")
+    # Extract user ID from the command
+    try:
+        user_id = int(event.text.split()[1])
+    except (IndexError, ValueError):
+        await event.reply("Usage: /addprivileged <user_id>")
         return
 
-    if event.is_reply:
-        message = (await event.get_reply_message()).text
+    # Add the user to the privileged list
+    if user_id not in PRIVILEGED_USER_IDS:
+        PRIVILEGED_USER_IDS.append(user_id)
+        os.environ['PRIVILEGED_USER_IDS'] = ','.join(map(str, PRIVILEGED_USER_IDS))
+        await event.reply(f"✅ User {user_id} has been added to the privileged list.")
     else:
-        message = ' '.join(args[2:])
+        await event.reply(f"ℹ️ User {user_id} is already privileged.")
 
-    if flag == '-u':
-        users = await get_users()
-        for user_id in users:
-            await client.send_message(user_id, message)
-    elif flag == '-g':
-        groups = await get_groups()
-        for group_id in groups:
-            await client.send_message(group_id, message)
-    elif flag == '-all':
-        users = await get_users()
-        groups = await get_groups()
-        for user_id in users:
-            await client.send_message(user_id, message)
-        for group_id in groups:
-            await client.send_message(group_id, message)
+@client.on(events.NewMessage(pattern='/removeprivileged'))
+async def handle_remove_privileged(event):
+    if event.sender_id != GOD_USER_ID:
+        await event.reply("🚫 You do not have permission to use this command.")
+        return
 
-    await event.reply("Broadcast completed.")
+    # Extract user ID from the command
+    try:
+        user_id = int(event.text.split()[1])
+    except (IndexError, ValueError):
+        await event.reply("Usage: /removeprivileged <user_id>")
+        return
+
+    # Remove the user from the privileged list
+    if user_id in PRIVILEGED_USER_IDS:
+        PRIVILEGED_USER_IDS.remove(user_id)
+        os.environ['PRIVILEGED_USER_IDS'] = ','.join(map(str, PRIVILEGED_USER_IDS))
+        await event.reply(f"✅ User {user_id} has been removed from the privileged list.")
+    else:
+        await event.reply(f"ℹ️ User {user_id} is not privileged.")
