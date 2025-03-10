@@ -1,5 +1,5 @@
 from client import client
-from commands import start, help, regex, broadcast, admin
+from commands import *
 
 # Start the bot
 print("Bot is running...")
