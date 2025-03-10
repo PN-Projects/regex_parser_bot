@@ -107,22 +107,20 @@ Thanks to these jacka** i mean amazing people who have contributed to this proje
   <tr>
     <td align="center">
       <a href="https://github.com/satyanandatripathi">
-        <img src="https://avatars.githubusercontent.com/u/satyanandatripathi" width="100px;" alt="satyanandatripathi"/>
+        <img src="https://github.com/satyanandatripathi.png" width="100px;" alt="satyanandatripathi"/>
         <br />
         <sub><b>satyanandatripathi</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/AvikaTrivedi">
-        <img src="https://avatars.githubusercontent.com/u/AvikaTrivedi" width="100px;" alt="AvikaTrivedi"/>
+        <img src="https://github.com/AvikaTrivedi.png" width="100px;" alt="AvikaTrivedi"/>
         <br />
         <sub><b>AvikaTrivedi</b></sub>
       </a>
     </td>
   </tr>
 </table>
-
----
 
 <h2>📄 License: Do What You Want (Within Reason)</h2>
 <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details. Basically, do whatever you want, but don’t blame us if it breaks. 😉</p>
