@@ -57,7 +57,7 @@ BOT_TOKEN=your_bot_token
 DATABASE_URI=postgresql://user:password@localhost:5432/telegram_bot</code></pre>
   </li>
   <li>Run the bot:
-    <pre><code>python bot.py</code></pre>
+    <pre><code>python3 bot.py</code></pre>
   </li>
 </ol>
 
