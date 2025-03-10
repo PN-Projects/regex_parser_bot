@@ -90,6 +90,8 @@ DATABASE_URI=postgresql://user:password@localhost:5432/telegram_bot</code></pre>
     <pre><code>heroku ps:scale worker=1</code></pre>
   </li>
 </ol>
+or you can just:
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PN-Projects/regex_parser_bot)
 
 <h2>📂 Project Structure: Where the Magic Happens</h2>
 <pre>
