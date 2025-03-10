@@ -91,7 +91,7 @@ DATABASE_URI=postgresql://user:password@localhost:5432/telegram_bot</code></pre>
   </li>
 </ol>
 or you can just:
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PN-Projects/regex_parser_bot)]
+[![[Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PN-Projects/regex_parser_bot)]
 
 
 
